@@ -1,0 +1,38 @@
+/* .................................... */
+/* Sección de clientes */
+/* .................................... */
+
+.client {
+  padding: 94px 0;
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.client__icon {
+  width: 106px;
+  height: 53px;
+  fill: #afb1b8;
+
+  .client__container:hover &,
+  .client__container:focus & {
+    fill: var(--high-lighted);
+  }
+}
+
+.client__container {
+  width: 170px;
+  height: 81px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 14px 32px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--high-lighted);
+  }
+}

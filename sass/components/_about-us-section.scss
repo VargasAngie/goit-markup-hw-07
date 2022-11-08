@@ -1,0 +1,43 @@
+/* ................................. */
+/* Sección de valores corporativos */
+/* ................................. */
+
+.about-us {
+  padding-top: 94px;
+
+  &__titles {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__container {
+    background-color: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    padding: 25px 100px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.about-us__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+
+  & > li {
+    width: 270px;
+  }
+}
