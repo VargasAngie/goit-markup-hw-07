@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="./sass/main.min.css"" />
+    <link rel="stylesheet" href="./sass/main.css"" />
   </head>
 
   <body>
@@ -524,7 +524,7 @@
 
           <div class="social-media">
             <p class="social-media__text">encuentrenos en</p>
-            <ul class="social-link social-link--style">
+            <ul class="social-link social-link--footer">
               <li>
                 <div class="social-link__box">
                   <svg class="social-link__icon icon--fill">
@@ -556,20 +556,20 @@
             </ul>
           </div>
 
-          <div class="subscribe-container">
-            <form name="subscribe">
-              <p class="subscribe-text">SUSCRÍBASE al boletín informativo</p>
-              <label class="footer__label">
+          <div class="subscribe">
+            <form class="subscribe__form" name="subscribe">
+              <p class="subscribe__text">SUSCRÍBASE al boletín informativo</p>
+              <label class="subscribe__label">
                 <input
-                  class="footer__input"
+                  class="subscribe__input"
                   type="email"
                   name="email"
                   placeholder="Correo electrónico"
                   required
                 />
-                <button class="footer__btn" type="submit">
+                <button class="subscribe__btn" type="submit">
                   Suscríbase
-                  <svg class="send">
+                  <svg class="subscribe__icon">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                 </button>

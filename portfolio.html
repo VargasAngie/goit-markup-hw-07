@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="./sass/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
 
   <body>
@@ -68,32 +68,33 @@
 
     <main>
       <!-- Contenido principal del portafolio -->
-      <section class="buttons-section">
-        <div class="container principal">
-          <!-- Sección de botones -->
-          <ul class="buttons-section-list">
+      <section class="portfolio-nav">
+        <div class="container">
+          <!-- Sección de navegación del portafolio -->
+          <ul class="portfolio-nav__list">
             <li>
-              <button type="button">Todo</button>
+              <button class="portfolio-nav__btn" type="button">Todo</button>
             </li>
             <li>
-              <button type="button">Sitios-web</button>
+              <button class="portfolio-nav__btn" type="button">Sitios-web</button>
             </li>
             <li>
-              <button type="button">Aplicaciones</button>
+              <button class="portfolio-nav__btn" type="button">Aplicaciones</button>
             </li>
             <li>
-              <button type="button">Diseño</button>
+              <button class="portfolio-nav__btn" type="button">Diseño</button>
             </li>
             <li>
-              <button type="button">Marketing</button>
+              <button class="portfolio-nav__btn" type="button">Marketing</button>
             </li>
           </ul>
         </div>
       </section>
-      <section class="projects-section">
-        <div class="container projects">
+      
+      <section class="projects">
+        <div class="container">
           <!-- Sección de proyectos -->
-          <ul class="projects-section-list">
+          <ul class="projects__list">
             <li>
               <div>
                 <div class="card">
@@ -112,8 +113,8 @@
                     </p>
                   </div>
                 </div>
-                <p class="project-name">Tecnoduck</p>
-                <p class="project-type">Sitio-web</p>
+                <p class="project__name">Tecnoduck</p>
+                <p class="project__type">Sitio-web</p>
               </div>
             </li>
             <li>
@@ -129,7 +130,7 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">
+                <p class="project__name">
                   Póster de Nueva Orleans vs <br />
                   Estrella Dorada
                 </p>
@@ -148,8 +149,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Restaurante Seafood</p>
-                <p class="project-type">Aplicaciones</p>
+                <p class="project__name">Restaurante Seafood</p>
+                <p class="project__type">Aplicaciones</p>
               </div>
             </li>
             <li>
@@ -165,8 +166,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Proyecto Prime</p>
-                <p class="project-type">Marketing</p>
+                <p class="project__name">Proyecto Prime</p>
+                <p class="project__type">Marketing</p>
               </div>
             </li>
             <li>
@@ -182,8 +183,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Proyecto Cajas</p>
-                <p class="project-type">Aplicaciones</p>
+                <p class="project__name">Proyecto Cajas</p>
+                <p class="project__type">Aplicaciones</p>
               </div>
             </li>
             <li>
@@ -199,8 +200,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">La inspiración no tiene límites</p>
-                <p class="project-type">Sitio-web</p>
+                <p class="project__name">La inspiración no tiene límites</p>
+                <p class="project__type">Sitio-web</p>
               </div>
             </li>
             <li>
@@ -216,8 +217,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Edición Limitada</p>
-                <p class="project-type">Diseño</p>
+                <p class="project__name">Edición Limitada</p>
+                <p class="project__type">Diseño</p>
               </div>
             </li>
             <li>
@@ -233,8 +234,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Proyecto LAB</p>
-                <p class="project-type">Marketing</p>
+                <p class="project__name">Proyecto LAB</p>
+                <p class="project__type">Marketing</p>
               </div>
             </li>
             <li>
@@ -250,8 +251,8 @@
                     <p>Texto</p>
                   </div>
                 </div>
-                <p class="project-name">Negocio en Crecimiento</p>
-                <p class="project-type">Aplicaciones</p>
+                <p class="project__name">Negocio en Crecimiento</p>
+                <p class="project__type">Aplicaciones</p>
               </div>
             </li>
           </ul>
@@ -281,7 +282,7 @@
 
           <div class="social-media">
             <p class="social-media__text">encuentrenos en</p>
-            <ul class="social-link social-link--style">
+            <ul class="social-link social-link--footer">
               <li>
                 <div class="social-link__box">
                   <svg class="social-link__icon icon--fill">
@@ -313,20 +314,20 @@
             </ul>
           </div>
 
-          <div class="subscribe-container">
-            <form name="subscribe">
-              <p class="subscribe-text">SUSCRÍBASE al boletín informativo</p>
-              <label class="footer__label">
+          <div class="subscribe">
+            <form class="subscribe__form" name="subscribe">
+              <p class="subscribe__text">SUSCRÍBASE al boletín informativo</p>
+              <label class="subscribe__label">
                 <input
-                  class="footer__input"
+                  class="subscribe__input"
                   type="email"
                   name="email"
                   placeholder="Correo electrónico"
                   required
                 />
-                <button class="footer__btn" type="submit">
+                <button class="subscribe__btn" type="submit">
                   Suscríbase
-                  <svg class="send">
+                  <svg class="subscribe__icon">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
                 </button>
