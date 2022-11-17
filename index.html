@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="./sass/main.css"" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -140,18 +140,30 @@
                   >
                   </textarea>
                 </label>
-                <label class="form__checkbox">
-                  <input
-                    type="checkbox"
-                    name="check"
-                    value="Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones"
-                    required
-                  />
-                  <p class="checkbox__text">
-                    Estoy de acuerdo con el boletín informativo y acepto los
-                    Términos y Condiciones
-                  </p>
-                </label>
+                <div class="div--relative">
+                  <label
+                    class="form__checkbox"
+                    for="input-accept"
+                  >
+                    <input
+                      type="checkbox"
+                      id="input-accept"
+                      name="check"
+                      value="Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones"
+                      required
+                      hidden
+                    />
+                    <span class="checkmark">
+                      <svg class="checkmark__icon">
+                        <use href="./images/icons.svg#checkmark"></use>
+                      </svg>
+                    </span>
+                    <p class="checkbox__text">
+                      Estoy de acuerdo con el boletín informativo y acepto los
+                      Términos y Condiciones
+                    </p>
+                  </label>
+                </div>
                 <button class="form__send" type="submit">Enviar</button>
               </form>
             </div>
@@ -505,7 +517,6 @@
       <div class="container footer--style">
         <a href="/" class="logo">WebStudio</a>
         <div class="footer__box">
-          
           <address>
             <p class="footer__text">
               Calz. Ticomán 500, Ciudad de <br />
